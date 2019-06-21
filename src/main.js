@@ -15,8 +15,13 @@ import './css/mui.min.css';
 
 import VueResource from 'vue-resource'
 Vue.use(VueResource)
+Vue.http.options.emulateJSON=true;
+Vue.http.options.root='http://lenovoserver:90/';//全局配置请求的根路径，便于以后维护，不用每个请求的页面都进行修改
 
 Vue.config.productionTip = false
+
+//引入全局配置的过滤器，比如时间格式化等过滤管道
+import filter from './filter/index.js'
 
 console.log("OK")
 /* eslint-disable no-new */

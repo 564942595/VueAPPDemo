@@ -1,10 +1,13 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-import Main from '../components/Main.vue'
-import Home from '../components/Home.vue'
-import Search from '../components/Search.vue'
-import Me from '../components/Me.vue'
+import Main from '../components/Tabbar/Main.vue'
+import Home from '../components/Tabbar/Home.vue'
+import Search from '../components/Tabbar/Search.vue'
+import Me from '../components/Tabbar/Me.vue'
+
+import NewsList from '../components/News/NewsList.vue'
+import NewsDetail from '../components/News/NewsDetail.vue'
 
 Vue.use(Router)
 
@@ -33,6 +36,14 @@ export default new Router({
       path: '/me',
       name: 'me',
       component: Me
+    },{
+      path: '/home/newsList',
+      name: 'newsList',
+      component: NewsList
+    },{
+      path: '/newsDeatils',
+      name: 'newsDetail',
+      component: NewsDetail
     }
   ],
   linkActiveClass:'mui-active'//'blue'//默认首页选中的样式

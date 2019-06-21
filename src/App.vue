@@ -13,11 +13,11 @@
       </router-link>
       <router-link to='/main' class="mui-tab-item" href="#tabbar-with-chat">
         <span class="mui-icon mui-icon-email"><span class="mui-badge">0</span></span>
-        <span class="mui-tab-label">消息</span>
+        <span class="mui-tab-label">维修</span>
       </router-link>
       <router-link to='/search' class="mui-tab-item" href="#tabbar-with-contact">
         <span class="mui-icon mui-icon-contact"></span>
-        <span class="mui-tab-label">通讯录</span>
+        <span class="mui-tab-label">保养</span>
       </router-link>
       <router-link to='/me' class="mui-tab-item" href="#tabbar-with-map">
         <span class="mui-icon mui-icon-gear"></span>
@@ -43,7 +43,7 @@ export default {
 
 <style scoped lang='scss'> 
 #app {
-  padding-top:40px;
+  padding:40px 0 65px 0;
   overflow-x:hidden;/*实现动画第一步，app横向超出隐藏，否则是加宽到200%到100%的效果*/
   .borderTop{
     background-image: linear-gradient(180deg, #d9d9d9, #d9d9d9 50%, transparent 100%); 

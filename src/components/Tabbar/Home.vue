@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div class="homeCont">
 
     <!-- 轮播图区域 -->
     <mt-swipe :auto="4000">
@@ -16,10 +16,10 @@
 
    <ul class="mui-table-view mui-grid-view mui-grid-9">
       <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
-        <a href="#">
+        <router-link to="/home/newsList">
               <span class="mui-icon mui-icon-home"></span>
-              <div class="mui-media-body">Home</div>
-          </a>
+              <div class="mui-media-body">新闻列表</div>
+          </router-link>
       </li>
       <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
         <a href="#">
@@ -99,19 +99,22 @@ export default {
 
 <!-- 注意swipe要给他设置一个高度才能显示出来 -->
 <style scoped lang='scss'>
-  .mint-swipe{
-    height:200px;
-    .mint-swipe-item{
-      &:nth-child(1){
-        background-color:red
+.homeCont{/*给组件的根元素一个类，所有样式写在这下面，及时没有scoped，也不会污染全局*/
+    .mint-swipe{
+        height:200px;
+        .mint-swipe-item{
+          &:nth-child(1){
+            background-color:red
+          }
+          &:nth-child(2){
+            background-color:yellow
+          }
+          &:nth-child(3){
+            background-color:pink
+          }
+        }
       }
-      &:nth-child(2){
-        background-color:yellow
-      }
-      &:nth-child(3){
-        background-color:pink
-      }
+      .mui-grid-view.mui-grid-9{background-color:#fff}
     }
-  }
-  .mui-grid-view.mui-grid-9{background-color:#fff}
+
 </style>
