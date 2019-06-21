@@ -1,6 +1,9 @@
 <template>
   <div id="app">
-    <mt-header fixed title="固定在顶部"></mt-header>
+   <mt-header fixed title="神州科创">
+        <mt-button icon="back" @click='back' slot="left"></mt-button>
+      <!-- <mt-button icon="more" slot="right"></mt-button> -->
+    </mt-header>
     
     <transition >
        <router-view/>
@@ -36,7 +39,9 @@ export default {
     }
   },
   methods:{
-   
+   back(){
+    this.$router.go(-1)
+   }
   }
 }
 </script>

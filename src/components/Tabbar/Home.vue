@@ -18,7 +18,7 @@
       <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
         <router-link to="/home/newsList">
               <span class="mui-icon mui-icon-home"></span>
-              <div class="mui-media-body">新闻列表</div>
+              <div class="mui-media-body">历史维修</div>
           </router-link>
       </li>
       <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
