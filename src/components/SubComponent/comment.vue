@@ -41,12 +41,12 @@ export default {
             "us": "E2EMIZmPqGnBm1bAX8nH/s5L8rqffrZcxFw+1J+TFDsq0pNaD4ziwB4VlgK5OMo4ihWaV3OeNY9H/AUgl5CEsA==" 
           }).then(
             res=>{
-              this.pageIndex++;
               this.cmtMsg=[];
               for(var i=0;i<this.pageIndex;i++){
                 this.cmtMsg.push(JSON.parse(res.body))
               }
-                console.log(this.cmtMsg);
+              this.pageIndex++;
+              console.log(this.cmtMsg);
             },
             err=>{}
             )
